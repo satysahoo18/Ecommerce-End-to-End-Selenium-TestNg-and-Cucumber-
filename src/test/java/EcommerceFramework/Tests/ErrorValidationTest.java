@@ -10,9 +10,17 @@ import EcommerceFramework.TestComponents.Retry;
 import EcommerceFramework.pageObject.AddToCartPage;
 import EcommerceFramework.pageObject.LandingPage;
 import EcommerceFramework.pageObject.Login;
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 
 public class ErrorValidationTest extends BaseTest {
+	
+@Test
+public void gitSatyaY(){
+	System.out.println("THis is SatyaY");
+	System.out.println("THis is SatyaY 2");
+	} 
+	
 @Test(groups = {"Smoke"}, retryAnalyzer=Retry.class)
 public void loginErrorValidation() throws IOException {
 	
@@ -29,5 +37,7 @@ public void CartProductValidation() throws InterruptedException {
 	AddToCartPage cart = landingPage.clickOnCart();
 	Assert.assertFalse(cart.productVerification("zara coat 33"));
 }
+
+
 
 }
