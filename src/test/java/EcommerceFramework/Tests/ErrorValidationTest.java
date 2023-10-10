@@ -17,8 +17,7 @@ public class ErrorValidationTest extends BaseTest {
 	
 @Test
 public void gitSatyaY(){
-	System.out.println("THis is SatyaY");
-	System.out.println("THis is SatyaY 2");
+	
 	} 
 	
 @Test(groups = {"Smoke"}, retryAnalyzer=Retry.class)
